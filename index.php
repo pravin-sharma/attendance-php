@@ -1,6 +1,7 @@
 <!-- Header -->
 <?php 
-    require_once('includes/header.php')
+    require_once('includes/header.php');
+    require_once('db/conn.php');
 ?>  
 <!-- Body -->
     <h1 class='text-center'>Registration Form</h1>
@@ -21,7 +22,7 @@
             <label for="speciality">Speciality</label>
             <select class="form-control" id="speciality" name="speciality">
                 <option selected disabled value=''>Select</option>
-                <option>Database Admin</option>
+                <option value='2'>Database Admin</option>
                 <option>Software Developer</option>
                 <option>Web Admin</option>
                 <option>Other</option>
